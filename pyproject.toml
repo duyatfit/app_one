@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "app_one"
+version = "0.0.1"
+description = "App One"
+authors = [
+    "App One Author"
+]
+
+# Specifying the private PyPI here.
+[[tool.poetry.source]]
+name = "fitapypi"
+url = "https://duyatfit.github.io/fitapypi"
+
+# Requirements
+[tool.poetry.dependencies]
+python = "~2.7"
+numpy = "*"
+lib_one = "*"
+lib_two = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.1"
+pytest-cov = "^2.5"
+
+[tool.poetry.scripts]
+poetry = "poetry.console:main"
